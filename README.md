@@ -2,11 +2,11 @@
 
 ## Question 1: Digit Gatekeeper
 Logic:
-Loop from L to R
-Check if number contains digit 0
-Check if number is divisible by K
-Find sum of digits
-Check if sum is prime
+Loop from L to R, 
+Check if number contains digit 0, 
+Check if number is divisible by K, 
+Find sum of digits, 
+Check if sum is prime then 
 Count valid numbers
 
 Complexity:
@@ -15,10 +15,10 @@ Space: O(1)
 
 ## Question 2: Roll-Seed Lock
 Logic:
-Repeat 3 times:
-If even → divide by 2 and add seed
-If odd → multiply by 3 and subtract seed
-Check if result is 3-digit number
+Repeat 3 times:, 
+If even → divide by 2 and add seed, 
+If odd → multiply by 3 and subtract seed, 
+Check if result is 3-digit number then 
 Check if middle digit equals seed
 
 Complexity:
@@ -27,9 +27,9 @@ Space: O(1)
 
 ## Question 3: Mirror Corridor
 Logic:
-Try values of X from 0 to 100000
-Check if N + X is palindrome
-Check if divisible by K
+Try values of X from 0 to 100000, 
+Check if N + X is palindrome, 
+Check if divisible by K then 
 Print smallest X
 
 Complexity:
@@ -38,10 +38,10 @@ Space: O(1)
 
 ## Question 4: Fare Calculator
 Logic:
-Calculate base fare
-Add late fee if needed
-Add 10% if distance > 10
-Adjust based on seed (odd/even)
+Calculate base fare, 
+Add late fee if needed, 
+Add 10% if distance > 10, 
+Adjust based on seed (odd/even) then
 Round up to nearest multiple of 5
 
 Complexity:
@@ -50,8 +50,8 @@ Space: O(1)
 
 ## Question 5: Skipping Numbers
 Logic:
-Add numbers from 1 onwards
-Skip numbers divisible by (seed + 2)
+Add numbers from 1 onwards, 
+Skip numbers divisible by (seed + 2) then
 Stop when sum ≥ N
 
 Complexity:
@@ -60,9 +60,9 @@ Space: O(1)
 
 ## Question 6: Contest Score Judge
 Logic:
-Calculate score using formula
-Handle negative score
-Apply penalty if total answers > 50
+Calculate score using formula, 
+Handle negative score, 
+Apply penalty if total answers > 50 then
 Decide PASS or FAIL
 
 Complexity:
