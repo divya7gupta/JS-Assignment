@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q1</title>
+</head>
+<body>
+
+<script>
+
+let L = Number(prompt("Enter L:"));
+let R = Number(prompt("Enter R:"));
+let K = Number(prompt("Enter K:"));
+
+let count = 0;
+
+for (let i = L; i <= R; i++) {
+
+    if (i % K == 0) {
+
+        let n = i;
+        let sum = 0;
+        let hasZero = 0;
+
+        while (n > 0) {
+            let d = n % 10;
+
+            if (d == 0) {
+                hasZero = 1;
+                break;
+            }
+
+            sum = sum + d;
+            n = Math.floor(n / 10);
+        }
+
+        if (hasZero == 0) {
+
+            let isPrime = 1;
+
+            if (sum < 2) {
+                isPrime = 0;
+            } else {
+                for (let j = 2; j < sum; j++) {
+                    if (sum % j == 0) {
+                        isPrime = 0;
+                        break;
+                    }
+                }
+            }
+
+            if (isPrime == 1) {
+                count++;
+            }
+        }
+    }
+}
+
+alert(count);
+
+</script>
+
+</body>
+</html>
